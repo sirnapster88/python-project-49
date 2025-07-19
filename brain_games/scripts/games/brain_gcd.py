@@ -5,12 +5,13 @@ import prompt
 
 
 def nod(num1,num2):
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
-        else:
-            num2 = num2 % num1
-        return num1 + num2
+    if num2 == 0:
+        return num1
+    while num2 != 0:
+       num1, num2= num2,num1 % num2
+    return num1
+
+
 
 
 def gcd():
@@ -20,10 +21,7 @@ def gcd():
     while cnt < 3:
         num1= random.randint(0, 10)
         num2= random.randint(0, 10)
-        if num2 == 0:
-            comp_answ= num1
         comp_answ= nod(num1,num2)
-        print(comp_answ)
         print(f"Question: {num1} {num2}")
         hum_answ= prompt.integer('Your answer: ')
         flag = check(hum_answ, comp_answ)
