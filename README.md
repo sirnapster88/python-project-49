@@ -9,4 +9,4 @@
 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=sirnapster88_python-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=sirnapster88_python-project-49)
 
-[![Local GIF](./animations/brain-even.gif)]
+![Local GIF](./animations/brain-even.gif)
