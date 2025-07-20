@@ -14,3 +14,5 @@
 ![Local GIF](./animations/brain-even.gif)
 
 ![Local GIF](./animations/brain-gcd.gif)
+
+![Local GIF](./animations/brain-progression.gif)
