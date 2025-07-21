@@ -28,7 +28,7 @@ def progression():
         question, comp_answ = progression_generator()
         print(f"Question: {question}")
         hum_answ = prompt.integer('Your answer: ')
-        flag = check(hum_answ, comp_answ)
+        flag = check(int(hum_answ), int(comp_answ))
         if flag == False:
             print(f"{hum_answ} is wrong answer ;(. Correct answer was {comp_answ}.")
             print(f"Let's try again, {name}!")
