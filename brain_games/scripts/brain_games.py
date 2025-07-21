@@ -1,9 +1,8 @@
-from brain_games.cli import welcome_user
-
+from .. import cli
 
 
 def main():
-    welcome_user()
+    cli.welcome_user()
 
 
 if __name__ == '__main__':
