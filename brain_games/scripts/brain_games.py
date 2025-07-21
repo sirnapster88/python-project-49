@@ -1,4 +1,5 @@
 from .. import cli
+import prompt
 
 
 def main():
