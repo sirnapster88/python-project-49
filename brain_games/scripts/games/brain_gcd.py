@@ -1,6 +1,9 @@
+import random
+
+import prompt
+
 from brain_games.scripts.greeting import greet
 from brain_games.scripts.logic import check
-import random, prompt
 
 
 def nod(num1, num2):
@@ -18,12 +21,12 @@ def gcd():
     while cnt < 3:
         num1 = random.randint(0, 10)
         num2 = random.randint(0, 10)
-        comp_answ = nod(num1, num2)
+        comp_an = nod(num1, num2)
         print(f"Question: {num1} {num2}")
-        hum_answ = prompt.integer('Your answer: ')
-        flag = check(hum_answ, comp_answ)
-        if flag == False:
-            print(f"{hum_answ} is wrong answer ;(. Correct answer was {comp_answ}.")
+        hum_an = prompt.integer('Your answer: ')
+        flag = check(hum_an, comp_an)
+        if not flag:
+            print(f"{hum_an} is wrong answer ;(. Correct answer was {comp_an}.")
             print(f"Let's try again, {name}!")
             break
         cnt += 1

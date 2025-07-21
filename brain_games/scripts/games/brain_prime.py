@@ -1,6 +1,9 @@
+import random
+
+import prompt
+
 from brain_games.scripts.greeting import greet
 from brain_games.scripts.logic import check
-import random, prompt
 
 
 def is_prime(num):
@@ -20,16 +23,16 @@ def brain_prime():
     while cnt < 3:
         num = random.randint(1, 50)
         if is_prime(num):
-            comp_answ = 'yes'
+            comp_an = 'yes'
         else:
-            comp_answ = 'no'
+            comp_an = 'no'
         print(f"Question: {num}")
-        hum_answ = prompt.string('Your answer: ')
-        flag = check(hum_answ, comp_answ)
-        if flag == False:
-            print(f"{hum_answ} is wrong answer ;(. Correct answer was {comp_answ}.")
+        hum_an = prompt.string('Your answer: ')
+        flag = check(hum_an, comp_an)
+        if not flag:
+            print(f"{hum_an} is wrong answer ;(. Correct answer was {comp_an}.")
             print(f"Let's try again, {name}!")
-            break  
+            break 
         cnt += 1
     if flag:
         print(f"Congratulations, {name}!")
