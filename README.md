@@ -16,3 +16,5 @@
 ![Local GIF](./animations/brain-gcd.gif)
 
 ![Local GIF](./animations/brain-progression.gif)
+
+![Local GIF](./animations/brain-prime.gif)
