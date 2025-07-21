@@ -25,12 +25,14 @@ def is_even():
             print(f"{hum_answ} is wrong answer ;(. Correct answer was {comp_answ}.")
             print(f"Let's try again, {name}!")
             break  
-        cnt +=1
-    if flag == True:
+        cnt += 1
+    if flag:
         print(f"Congratulations, {name}!")
-                   
+
+
 def main():
     is_even()
+
 
 if __name__ == '__main__':
     main()
