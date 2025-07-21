@@ -1,5 +1,5 @@
-from brain_games.scripts.greeting import greet, results
-from brain_games.scripts.logic import *
+from brain_games.scripts.greeting import greet
+from brain_games.scripts.logic import check
 import random
 import prompt
 
