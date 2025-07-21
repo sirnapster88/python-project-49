@@ -13,19 +13,20 @@ def progression_generator():
     progression = []
     for index in range (lenght):
         current_element = start + index * step
-        progression.append(current_element)
+        progression.append(str(current_element))
     
     comp_answ= progression[hid_num]
     progression[hid_num] = '..'
-    return progression, comp_answ
+    question= " ".join(progression)
+    return question, comp_answ
 
 def progression():
     cnt = 0
     print('What number is missing in the progression?')
     name = greet()
     while cnt < 3:
-        progression, comp_answ = progression_generator()
-        print(f"Question: {progression}")
+        question, comp_answ = progression_generator()
+        print(f"Question: {question}")
         hum_answ = prompt.integer('Your answer: ')
         flag = check(hum_answ, comp_answ)
         if flag == False:
