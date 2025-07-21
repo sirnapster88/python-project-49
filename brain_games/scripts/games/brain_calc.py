@@ -14,7 +14,7 @@ def calculator():
         num1= random.randint(1, 5)
         num2= random.randint(1, 5)
         oper_symb= random.choice(operators)
-        print(f"Question: {num1}{oper_symb}{num2}")
+        print(f"Question: {num1} {oper_symb} {num2}")
         hum_answ = prompt.integer('Your answer: ')
         if oper_symb == '+':
             comp_answ = num1 + num2

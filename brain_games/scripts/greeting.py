@@ -3,7 +3,7 @@ import prompt
 def greet(): #данная функция осуществляет вывод приветсвенных сообщений
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have Your name? ')
-    print(f"{"Hello,"} {name}{"!"}")
+    print(f"Hello, {name}!")
     return name
 
 def results(flag, name, hum_answ = None, comp_answ = None):
