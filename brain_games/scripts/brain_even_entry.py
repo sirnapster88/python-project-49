@@ -1,8 +1,7 @@
-from brain_games.scripts import engine
 from brain_games.games import brain_even
+from brain_games.scripts import engine
 
-
-game_objective = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
+game_objective = "Answer \"yes\" if the number is even, otherwise answer \"no\""
 
 
 def main():

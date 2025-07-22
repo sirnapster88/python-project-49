@@ -11,11 +11,11 @@ def engine_logic(game, game_objective: str):
     win = True
     cnt = 0
     while cnt < ROUND_COUNT:
-        correct_answ, question = game()
+        corr_an, question = game()
         print(f"Question: {question}")
-        hum_answ = prompt.string('Your answer: ')
-        if correct_answ != hum_answ :
-            print(f"{hum_answ} is wrong answer ;(. Correct answer was {correct_answ}.")
+        hum_an = prompt.string('Your answer: ')
+        if corr_an != hum_an:
+            print(f"{hum_an} is wrong answer ;(. Correct answer was {corr_an}.")
             print(f"Let's try again, {name}!")
             win = False
             break 

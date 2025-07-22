@@ -1,6 +1,5 @@
-from brain_games.scripts import engine
 from brain_games.games import brain_gcd
-
+from brain_games.scripts import engine
 
 game_objective = 'Find the greatest common divisor of given numbers.'
 

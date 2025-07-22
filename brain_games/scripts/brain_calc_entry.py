@@ -1,6 +1,5 @@
-from brain_games.scripts import engine
 from brain_games.games import brain_calc
-
+from brain_games.scripts import engine
 
 game_objective = 'What is the result of the expression?'
 
