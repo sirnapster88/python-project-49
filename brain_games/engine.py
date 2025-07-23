@@ -3,18 +3,18 @@ import prompt
 ROUND_COUNT = 3
 
 
-def engine_logic(game, game_objective: str):
+def engine_logic(game_module):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    print(game_objective)
+    print(game_module.game_obj)
     win = True
     cnt = 0
     while cnt < ROUND_COUNT:
-        corr_an, question = game()
+        corr_an, question = game_module.game()
         print(f"Question: {question}")
         hum_an = prompt.string('Your answer: ')
-        if corr_an != hum_an:
+        if str(corr_an) != hum_an:
             print(f"{hum_an} is wrong answer ;(. Correct answer was {corr_an}.")
             print(f"Let's try again, {name}!")
             win = False

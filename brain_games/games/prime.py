@@ -1,6 +1,9 @@
 import random
 
 
+game_obj = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
+
+
 def is_prime(num):
     if num <= 1:
         return False
@@ -11,7 +14,7 @@ def is_prime(num):
     return True
 
 
-def brain_prime():
+def game():
     comp_an = None
     num = random.randint(1, 50)
     if is_prime(num):

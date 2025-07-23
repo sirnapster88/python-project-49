@@ -1,7 +1,10 @@
 import random
 
 
-def progression():
+game_obj = 'What number is missing in the progression?'
+
+
+def game():
     start = random.randint(1, 10)
     step = random.randint(1, 5)
     lenght = random.randint(5, 10)
@@ -16,6 +19,6 @@ def progression():
     comp_answ = progression[hid_num]
     progression[hid_num] = '..'
     question = " ".join(progression)
-    return str(comp_answ), question, 
+    return comp_answ, question, 
 
 
