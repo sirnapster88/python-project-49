@@ -11,7 +11,6 @@ def even(random_num):
         return False
     
 
-
 def game():
     comp_an = None
     random_num = randint(1, 100) 
