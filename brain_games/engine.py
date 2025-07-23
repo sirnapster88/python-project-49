@@ -10,11 +10,11 @@ def engine_logic(game_module):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    print(game_module.game_obj)
+    print(game_module.GAME_OBJ)
     win = True
     cnt = 0
     while cnt < ROUND_COUNT:
-        corr_an, question = game_module.game()
+        corr_an, question = game_module.play_game()
         print(f"Question: {question}")
         hum_an = prompt.string('Your answer: ')
         if str(corr_an) != hum_an:

@@ -6,7 +6,7 @@ the next number in the progression"""
 GAME_OBJ = 'What number is missing in the progression?'
 
 
-def game():
+def play_game():
     """Function with main game logic that
     generate random numbers for progression
     get hidden element of progression and
