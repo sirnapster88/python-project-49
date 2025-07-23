@@ -1,8 +1,8 @@
 from brain_games import engine
 from brain_games.games import even
 
-"""Данный модуль является вводточкой входа в программу
-brain-even, игры по выявлению четного числа"""
+"""This module is the entry point to the program
+brain-even"""
 
 
 def main():

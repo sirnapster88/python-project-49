@@ -1,8 +1,8 @@
 from brain_games import engine
 from brain_games.games import gcd
 
-"""Данный модуль является вводточкой входа в программу
-brain-gdc, игры по определению наибольшего общего делителя"""
+"""This module is the entry point to the program
+brain-gdc"""
 
 
 def main():

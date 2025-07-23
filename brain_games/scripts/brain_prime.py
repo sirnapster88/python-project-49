@@ -1,8 +1,8 @@
 from brain_games import engine
 from brain_games.games import prime
 
-"""Данный модуль является вводточкой входа в программу
-brain-prime, игры по определению простого числа"""
+"""This module is the entry point to the program
+brain-prime"""
 
 
 def main():
