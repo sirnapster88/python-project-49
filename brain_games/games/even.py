@@ -14,7 +14,6 @@ def even(random_num):
 def game():
     comp_an = None
     random_num = randint(1, 100) 
-    comp_an = even(random_num)
     if even(random_num):
         comp_an = 'yes'
     else:
