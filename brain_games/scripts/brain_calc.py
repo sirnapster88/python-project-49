@@ -1,5 +1,8 @@
-from brain_games.games import calc
 from brain_games import engine
+from brain_games.games import calc
+
+"""Данный модуль является вводточкой входа в программу
+brain-calc, игры калькулятор"""
 
 
 def main():

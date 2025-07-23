@@ -1,5 +1,7 @@
 import random
 
+"""Данный модуль осуществляет выполнение логики игры по определению
+простого числа"""
 
 game_obj = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
 

@@ -1,5 +1,7 @@
 from random import randint
 
+"""Данный модуль осуществляет выполнение логики игры 
+на выявление четного числа"""
 
 game_obj = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 

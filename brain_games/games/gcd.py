@@ -1,5 +1,7 @@
 import random
 
+"""Данный модуль осущестляет выполнение логики игры по вычислению
+наибольшего общего делителя"""
 
 game_obj = 'Find the greatest common divisor of given numbers.'
 

@@ -1,5 +1,7 @@
 import random
 
+"""Данный модуль осуществляет выполнение логики игры по определнию
+следующего числа прогрессии"""
 
 game_obj = 'What number is missing in the progression?'
 

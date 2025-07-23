@@ -1,5 +1,6 @@
 import random
 
+"""Данный модуль осуществляет выполнение логики игры калькулятор"""
 
 game_obj = 'What is the result of the expression?'
 
