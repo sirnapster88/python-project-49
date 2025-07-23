@@ -11,7 +11,7 @@ def is_prime(num):
     that check number is it prime or not"""
     if num <= 1:
         return False
-    #cicle where realise main logic of checkin for prime
+    # cicle where realise main logic of checkin for prime
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
             return False

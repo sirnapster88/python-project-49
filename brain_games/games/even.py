@@ -22,7 +22,7 @@ def play_game():
     function is_even()"""
     comp_an = None
     random_num = randint(1, 100) 
-    #generate random number from 1 to 100
+    # generate random number from 1 to 100
     if is_even(random_num):
         comp_an = 'yes'
     else:

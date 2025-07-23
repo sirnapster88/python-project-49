@@ -12,19 +12,19 @@ def game():
     get hidden element of progression and
     hide it for user, and then returns correct
     answer"""
-    #generate parametrs of random progression
+    # generate parametrs of random progression
     start = random.randint(1, 10)  
     step = random.randint(1, 5)  
     lenght = random.randint(5, 10)  
-    #get hidden element of progression
+    # get hidden element of progression
     hid_num = random.randint(0, lenght - 1)  
 
     progression = []
-    #fill progression with elements
+    # fill progression with elements
     for index in range(lenght):
         current_element = start + index * step
         progression.append(str(current_element))
-    #get hidden element of progression and correct answer
+    # get hidden element of progression and correct answer
     comp_answ = progression[hid_num]  
     progression[hid_num] = '..'
     question = " ".join(progression)
